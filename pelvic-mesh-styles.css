@@ -1,0 +1,305 @@
+/* ---------------- Reset ------------------------ */
+/* null margins and padding to give good cross-browser baseline */
+html,body,address,blockquote,div,form,fieldset,caption,h1,h2,h3,h4,h5,h6,hr,table,tr,td,th,p,img {
+	margin:0;
+	padding:0
+}
+
+img,fieldset {
+	border:none
+}
+
+/* ---------------- Web Fonts ------------------------ */
+/*@import url("//hello.myfonts.net/count/27c2a6");*/
+@font-face {
+	font-family:'NovareseStd-Book';
+	src:url(/webfonts/27C2A6_0_0.eot);
+	src:url(webfonts/27C2A6_0_0.eot?#iefix) format("embedded-opentype"),url(webfonts/27C2A6_0_0.woff) format("woff"),url(webfonts/27C2A6_0_0.ttf) format("truetype")
+}
+
+/* ---------------- Styles ------------------------ */
+.wrapper {
+	background-color:#fff;
+	margin-top:-6px;
+	padding-top:20px
+}
+
+#header,.wrapper {
+	max-width:1300px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden
+}
+
+body {
+	font-family:"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+	font-size:16px;
+	line-height:1.5em;
+	background-color:#dfdfed;
+	min-width:280px
+}
+
+.nocontent {
+    display: none; /* Hide headers that are intended for outline */
+}
+
+.clearfix:after {  /* Prevent parent elements from collapsing when they contain only floated elements */
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.clearFloat { 
+	clear:both
+}
+
+img {
+	max-width:100%
+}
+
+/* ---------------- Margins and Padding ------------------------ */
+
+.paddingL {
+	padding-left:50px
+}
+
+.paddingR {
+	padding-right:50px
+}
+
+.marginB {
+	margin-bottom:50px
+}
+
+.marginT {
+	margin-top:75px
+}
+
+
+p {
+	margin-bottom:1em
+}
+
+li {
+	margin-bottom:25px
+}
+
+/* ---------------- Headings ------------------------ */
+
+h1,h2,h3 {
+	padding-top:1em;
+	color:#000;
+	line-height:1em
+}
+
+h1 {
+	font-family:NovareseStd-Book,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;
+	font-weight:400;
+	font-style:normal;
+	font-size:48px;
+	text-align:center
+}
+
+h2,h3 {
+	margin-bottom:50px
+}
+
+/* ---------------- Header ------------------------ */
+
+#header {
+	background:#9379d0;
+	padding-top:12.5px;
+	padding-bottom:12.5px;
+	height:75px
+}
+
+#header img {
+	float:left;
+	padding-bottom:1px
+}
+
+#header p {
+	color:#fff;
+	float:right;
+	height:55px;
+	margin-top:0;
+	font-size:14px;
+	text-align:right
+}
+
+#header a:link,#header a:active,#header a:visited,#header a:hover {
+	color:#fff
+}
+
+/* ---------------- Other Sections ------------------------ */
+
+.intro h1 {
+	margin-bottom:25px
+}
+
+.subhead {
+	text-align:center;
+	font-size:24px;
+}
+
+
+.main {
+	float:left;
+	width:65%
+}
+
+.event {
+	float:right;
+	background-color:#dfdfed;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	width:250px;
+	padding-left:25px;
+	padding-right:25px;
+	padding-top:15px;
+        margin-left: 25px;
+}
+
+.cta a:link,.cta a:active,.cta a:visited,.cta a:hover {
+	display:block;
+	background-color:#23408e;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	font-size:24px;
+	height:75px;
+	width:493px;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+	line-height:3em;
+	margin-left:auto;
+	margin-right:auto
+}
+
+.cta a:hover {
+	background-color:#2a4ca9
+}
+
+.quote {
+	font-family:"Times New Roman",serif;
+	font-size:100px;
+	float:left;
+	line-height:.8em
+}
+
+.text {
+    margin-left: 60px;
+    width: 80%;
+}
+
+.credit {
+	font-size:12px;
+	margin-top:-10px
+}
+
+.separator {
+	border-top:solid 1px #dfdfed;
+	width:100%
+}
+
+
+.speaker img {
+    float: left;
+    margin-right: 15px;
+    
+}
+
+.call {
+	text-align:center;
+	margin-top:1em
+}
+
+/* ---------------- Mobile Styles ------------------------ */
+
+@media only screen and (max-width: 1050px) {
+
+    .event {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+    
+    .event img {
+        display: none;
+    }
+
+    .main {
+        float: none;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .marginB {
+        margin-bottom: 50px;
+    }
+    
+    .marginT {
+        margin-top: 50px;
+    }
+    
+    .paddingL {
+	padding-left:15px
+    }
+
+    .paddingR {
+	padding-right:15px
+    }
+    
+    .subhead {
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size:35px;
+        text-align: left;
+    }
+    
+    #header {
+	height:auto;
+        text-align: center;
+    }
+
+    #header img {
+	float:none;
+    }
+
+    #header p {
+	float:none;
+	height:55px;
+	font-size:14px;
+        text-align: center;
+    }
+
+
+    .cta a:link,.cta a:active,.cta a:visited,.cta a:hover {
+	height:75px;
+	width:90%;
+        font-size: 20px;
+        line-height: 3.5em;
+    }
+    
+    .speaker img {
+    float: none;
+    margin-right: 0;
+    
+    }
+
+}
+
